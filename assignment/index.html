@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shape Factory</title>
+    <link rel="stylesheet" href="./assets/style/index.css" media="all">
+    <script src="./assets/script/script-01.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Shape and Color Selectors -->
+        <div>
+            <h1>Shape Factory</h1>
+        </div>
+        <div class="selectors-container">
+            <select id="shape-selector">
+                <option value="circle">Circle</option>
+                <option value="square">Square</option>
+            </select>
+
+            <select id="color-selector">
+                <option value="#09f">Blue</option>
+                <option value="#9f0">Green</option>
+                <option value="#f90">Orange</option>
+                <option value="#90f">Purple</option>
+                <option value="#f09">Pink</option>
+            </select>
+
+            <button onclick="createShape()">Create</button>
+        </div>
+        <!-- Container for the shapes -->
+        <div id="shape-container" class="shape-container"></div>
+        <!--  displaying shape information -->
+        <div id="shape-info"></div>
+    </div>
+
+</body>
+
+</html>
